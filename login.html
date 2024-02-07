@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <!--Formulario-->
+    <form action="">
+        
+        <label for="name">Nombre</label>
+        <input type="text" id="name"><br><br>
+        <label for="clave">clave</label>
+        <input type="password" id="clave"> <br><br>
+
+        <button onclick="entrar()" type="button">Entrar</button>
+    </form>
+
+    <script>
+function entrar(){
+    const user = document.getElementById('name').value;
+    const pass = document.getElementById('clave').value;
+ 
+    if(pass =="1234"){
+        alert(user);
+        window.location.href = "musica.html"
+        localStorage.usuario = user;
+    } else {
+        alert('Clave erronea')
+    }
+}
+    </script>
+
+    <textarea name="" id="" cols="120" rows="10">
+
+        <form action="">
+        
+            <label for="name">Nombre</label>
+            <input type="text" id="name"><br><br>
+            <label for="clave">clave</label>
+            <input type="password" id="clave"> <br><br>
+    
+            <button onclick="entrar()" type="button">Entrar</button>
+        </form>
+    
+        <script>
+    function entrar(){
+        const user = document.getElementById('name').value;
+        const pass = document.getElementById('clave').value;
+     
+        if(pass =="1234"){
+            alert(user);
+            window.location.href = "musica.html"
+            localStorage.usuario = user;
+        } else {
+            alert('Clave erronea')
+        }
+    }
+        </script>
+    </textarea>
+</div>
+</body>
+</html>
